@@ -34,6 +34,13 @@ const Cadastro = (props) => {
                         </select>
                     </div>
 
+                    {/*Botão Editar tem que ser do tipo button*/}
+                    {props.btnEditar && 
+                    <Botao 
+                    nomeDoBotao="Cancelar" 
+                    cancelarEdicao={props.cancelarEdicao}
+                    btnEditar={props.btnEditar} 
+                    /> }
                     <Botao nomeDoBotao="Cadastrar" />
                 </div>
             </form>
