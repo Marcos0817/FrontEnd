@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "id": "2",
+      "nome": "Julia",
+      "sobrenome": "Borges"
+    },
+    {
+      "nome": "Marcos Vinicius",
+      "sobrenome": "Lima Silva",
+      "id": "riFbx0Jk-rk"
+    },
+    {
+      "nome": "Antônio",
+      "sobrenome": "Salomão",
+      "id": "WX4BSpvYZrE"
+    },
+    {
+      "nome": "Molly",
+      "sobrenome": "Maria",
+      "id": "IJ_325hNyrI"
+    },
+    {
+      "nome": "Joaquina",
+      "sobrenome": "Maria",
+      "id": "ygVBy8N4OLs"
+    },
+    {
+      "nome": "aaa",
+      "sobrenome": "bbb",
+      "id": "zYxw4ayWFcc"
+    },
+    {
+      "nome": "Marcos ",
+      "sobrenome": "Vinicius",
+      "id": "zmZfeSGE5L0"
+    },
+    {
+      "nome": "Marcos",
+      "sobrenome": "Vinicius",
+      "email": "jb@gmail.com",
+      "telefone": "[object HTMLInputElement]1123455234234",
+      "cep": "04236030",
+      "rua": "Viela Dom Pedro",
+      "numero": "2",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "complemento": {},
+      "bairro": "Vila Heliópolis",
+      "anotação": "Dia lindo!",
+      "id": "Y0Kn_X0jr6o"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,373 @@
+@font-face{
+    font-family: Architects;
+    src: url(/css/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+     background-image: linear-gradient( to right bottom, #18A2C9,#18A2C9, #72C3DB);
+}
+   
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    
+}
+
+.container--flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-header__image-perfil{
+    width: 100px;
+    padding: 20px;
+    box-shadow: 0 0 7px rgb(222, 210, 124, 0.2);
+}
+
+.form-header__title{
+    color: #DED27C;
+    font-family: Architects, sans-serif;
+}
+
+.form-header__text{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*formulário de contato*/
+
+.form-contact{
+    padding: 20px;
+   
+}
+
+.form-contact__linha{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 35px;  */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-contact__linha2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-contact__col-a{
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.form-contact__col-b{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+
+.form-contact__label{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* tudo que é padrão nos inputs ficará aqui*/
+.form-contact__input{
+    padding: 5px 10px;
+    height: 35px;
+    color: #18A2C9;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 3px;
+    transition: background-color 0.4s, color 0.4s ;
+}
+
+.form-contact__input::placeholder{
+    color: #18A2C9;
+}
+.form-contact__input:focus{
+    background-color: #18a2c9;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.form-contact__input--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bt12{
+    display: inline-block;
+    padding: 10px;
+    width: 35%;
+    margin: 10px 0 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity .4s;
+}
+
+.bt12:hover{
+    background-color: #006682;
+    opacity: 0.75;
+}
+
+/*deixar um espaço para trabalhar entre eles*/
+.form-contact__input--metade{
+    width: 48%;
+    
+}
+
+.form-contact__input--inteira{
+    width: 100%;
+}
+
+.form-contact__input--terco{
+    width: 31%; 
+    
+}
+
+
+.form-contact__input--quarto{
+    width: 25%;
+}
+
+.form-contact__input--text{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px){
+
+    .form-contact__linha,
+    .form-contact__linha2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-contact__col-a{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-contact__col-b{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* TODOS inputs ficam 100% */
+    .form-contact__input--metade,
+    .form-contact__input--inteira,
+    .form-contact__input--terco,
+    .form-contact__input--quarto{
+        width: 100%;
+    }
+
+    .form-contact__input--text{
+        width: 100%;
+    }
+
+    /* BOTÕES */
+    .form-contact__input--btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bt12{
+        width: 100%;
+    }
+
+    /* HEADER */
+    .form-header__title{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .form-header__text{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .form-header__image-perfil{
+        width: 80px;
+    }
+}
+
+/* 💻 TABLET */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .form-contact__col-a{
+        width: 20%;
+    }
+
+    .form-contact__col-b{
+        width: 80%;
+    }
+
+    .bt12{
+        width: 45%;
+    }
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 850px;
+    }
+
+    .form-contact__linha,
+    .form-contact__linha2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-contact__col-a {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+    .form-contact__col-b {
+        width: 80%;
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .form-contact__input--metade {
+        width: 49%;
+    }
+
+    .form-contact__input--inteira {
+        width: 100%;
+    }
+
+    .form-contact__input--terco {
+        width: 30%;
+    }
+
+    .form-contact__input--quarto {
+        width: 24%;
+    }
+
+    .form-contact__input--btn {
+        width: 80%;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to right, #18A2C9, #18A2C9, #72C3BD);
+    }
+
+    .form-contact {
+        border-radius: 12px;
+    }
+
+    .form-contact__col-a {
+        width: 15%;
+    }
+
+    .form-contact__col-b {
+        width: 85%;
+    }
+
+    .form-contact__col-a,
+    .form-contact__col-b {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* MOBILE (o mais importante) */
+    .form-contact__linha,
+    .form-contact__linha2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-contact__col-a {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-contact__col-b {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-contact__input--metade,
+    .form-contact__input--inteira,
+    .form-contact__input--terco,
+    .form-contact__input--quarto {
+        width: 100%;
+    }
+
+    .form-contact__input--text {
+        width: 100%;
+    }
+
+    .form-contact__input--btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bt12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .form-contact__col-a{
+        display: none;
+    }
+
+    .form-contact__col-b{
+        width: 100%;
+    }
+
+    .form-contact__linha,
+    .form-contact__linha2{
+        flex-direction: column;
+    }
+}

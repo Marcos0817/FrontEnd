@@ -1,0 +1,22 @@
+{
+  "produtos": [
+    {
+      "titulo": "Mouse",
+      "categoria": "Games",
+      "descricao": "",
+      "preco": 76,
+      "estoque": 24,
+      "imagem": "hero.png",
+      "id": "MHnaynMyvtc"
+    },
+    {
+      "titulo": "213456",
+      "categoria": "21345678",
+      "preco": 231456789,
+      "estoque": 1234567,
+      "imagem": "2134567",
+      "id": "EWNVH_DEdUI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

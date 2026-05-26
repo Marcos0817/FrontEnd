@@ -1,0 +1,169 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Eduardo Costa",
+      "idade": 43,
+      "email": "edu@edu.com"
+    },
+    {
+      "id": "2",
+      "nome": "Mário Costa",
+      "idade": 43,
+      "email": "edu@edu.com"
+    },
+    {
+      "id": "rZkCh_Hljag",
+      "nome": "Marcos Vinicius",
+      "idade": 17,
+      "email": "Marcos@gmail.com"
+    },
+    {
+      "id": "HoBqD8X167M",
+      "nome": "Francisco Hugo",
+      "idade": 18,
+      "email": "hugo@gmail.com"
+    },
+    {
+      "id": "hXEyJ47XUVk",
+      "nome": "João Vitor",
+      "idade": 17,
+      "email": "joão@gmail.com"
+    }
+  ],
+  "post": [
+    {
+      "id": "1",
+      "Titulo": "Senai em Ação",
+      "Descrição": "Turmas do Senai estão criando Startups",
+      "Foto": "https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_S%C3%A3o_Paulo_logo.png",
+      "Curtida": 1000
+    },
+    {
+      "Titulo": "Barbearia",
+      "Descrição": "Cabeleleiros de SP ganham concurso",
+      "Foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29e2KOdGqYk6uOXUztHMQ9JB4hkUevSm7kA&s",
+      "Curtida": 500,
+      "id": "t0eQPKQ0_QM"
+    },
+    {
+      "Titulo": "Gatinhos DOAÇÃO",
+      "Descrição": "Feira de adoção em São Caetano do Sul",
+      "Foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29e2KOdGqYk6uOXUztHMQ9JB4hkUevSm7kA&s",
+      "Curtida": 150,
+      "id": "sz37jeaRbW4"
+    }
+  ],
+  "fruta": [],
+  "jogos": [],
+  "imc": [
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "IMC": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "9CIQdogtOKY"
+    },
+    {
+      "nome": "Gustavinho",
+      "altura": 1.63,
+      "peso": 55,
+      "IMC": "20.70",
+      "situacao": "Saudável",
+      "id": "DYI17jqSekI"
+    },
+    {
+      "nome": "Marcos",
+      "altura": 1.64,
+      "peso": 62,
+      "IMC": "23.05",
+      "situacao": "Saudável",
+      "id": "ZLZ_oxk5_q8"
+    },
+    {
+      "nome": "Marcão",
+      "altura": 1.72,
+      "peso": 78,
+      "IMC": "26.37",
+      "situacao": "Sobrepeso",
+      "id": "KArgjZ99pLs"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "IMC": "30.48",
+      "situacao": "Obesidade Grau I",
+      "id": "RRd3gKy44vs"
+    },
+    {
+      "nome": "Ana Julia",
+      "altura": 1.5,
+      "peso": 20,
+      "IMC": "8.89",
+      "situacao": "Magreza grave",
+      "id": "3SVLJ2ghQVg"
+    },
+    {
+      "nome": "francisco",
+      "altura": 1.67,
+      "peso": 85,
+      "IMC": "30.48",
+      "situacao": "Obesidade Grau I",
+      "id": "-kIANmV15cE"
+    }
+  ],
+  "calculadora": [
+    {
+      "n1": 40,
+      "n2": 20,
+      "op": "soma",
+      "resultado": "60.00",
+      "id": "8-R6u5vWwB4"
+    },
+    {
+      "n1": 51,
+      "n2": 2,
+      "op": "divisao",
+      "resultado": "25.50",
+      "id": "8zuiS0Qumsw"
+    },
+    {
+      "n1": 5,
+      "n2": 2,
+      "op": "subtracao",
+      "resultado": "3.00",
+      "id": "rchk904HEzU"
+    },
+    {
+      "n1": 532,
+      "n2": null,
+      "op": "multiplicacao",
+      "resultado": "NaN",
+      "id": "UDWSbJcAntw"
+    },
+    {
+      "n1": 500,
+      "n2": 2,
+      "op": "divisao",
+      "resultado": "250.00",
+      "id": "D50XfWfCXRw"
+    },
+    {
+      "n1": 32,
+      "n2": 2,
+      "op": "multiplicacao",
+      "resultado": "64.00",
+      "id": "9fVDvO5VWoU"
+    },
+    {
+      "n1": 2,
+      "n2": 2,
+      "op": "soma",
+      "resultado": "4.00",
+      "id": "GV_MUxEAD9A"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
