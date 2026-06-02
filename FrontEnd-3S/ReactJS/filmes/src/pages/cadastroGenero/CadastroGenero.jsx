@@ -99,7 +99,8 @@ const CadastroGenero = () => {
                 Alerta({
                     title: "Cadastro de Gênero",
                     text: `Gênero ${objCadastro.nome} cadastrado com sucesso!`,
-                    icon: "success"
+                    icon: "success",
+                    confirmButtonText: "OK"
                 })
 
                 // Limpa os campos do formulário
@@ -114,7 +115,8 @@ const CadastroGenero = () => {
                 Alerta({
                     title: "Cadastro de Gênero",
                     text: `Houve algum problema para cadastrar...`,
-                    icon: "error"
+                    icon: "error",
+                    confirmButtonText: "OK",
                 })
             }
 
@@ -385,35 +387,18 @@ const CadastroGenero = () => {
 
                 {/* Componente de formulário */}
                 <Cadastro
-
-                    // Título exibido no componente
                     tituloCadastro="Cadastro de Gêneros"
-
-                    // Controla visibilidade de algo interno
                     visibilidade="none"
-
-                    // Placeholder do input
                     placeholder="gênero"
-
-                    // Valor do input
                     valor={valor}
-
-                    // Função chamada ao cancelar edição
                     cancelarEdicao={limparFormulario}
-
-                    // Função que altera o valor do state
                     setValor={setValor}
-
-                    // Define qual função será usada:
-                    // editarGenero -> se estiver editando
-                    // cadastrarGenero -> se estiver cadastrando
+                    mostrarImagem={false}
                     funcCadastro={
                         editar
                             ? editarGenero
                             : cadastrarGenero
                     }
-
-                    // Define se botão de edição aparece
                     btnEditar={editar}
                 />
 

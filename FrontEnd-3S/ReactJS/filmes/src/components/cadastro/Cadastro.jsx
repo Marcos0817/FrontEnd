@@ -37,18 +37,24 @@ const Cadastro = (props) => {
                             ))}
                         </select>
 
-                        
+
                     </div>
-                    <div className="campo_cad_imagem">
-                            <label htmlFor="imagem">Imagem</label>
+                    {props.setImagem && (
+                        <div className="campo_cad_imagem">
+                            <label htmlFor="imagem" className="btn_arquivo">
+                                Escolher Arquivo
+                            </label>
 
                             <input
+                                id="imagem"
                                 type="file"
                                 name="imagem"
                                 accept="image/*"
                                 onChange={(e) => props.setImagem(e.target.files[0])}
+                                hidden
                             />
                         </div>
+                    )}
 
 
                     <Botao nomeDoBotao="Cadastrar" />

@@ -19,8 +19,8 @@ const Lista = (props) => {
                             {/* tr => table row */}
                             <tr className="table_cabecalho">
                                 {/* th => table head */}
-                                <th>Nome</th>
                                 <th style={{ display: props.visibilidade }}>Imagem</th>
+                                <th>Nome</th>
                                 <th style={{ display: props.visibilidade }}>Gênero</th>
                                 <th>Editar</th>
                                 <th>Excluir</th>
@@ -35,15 +35,22 @@ const Lista = (props) => {
                                     <tr className="item_lista" key={item.idFilme}>
                                         {/* {console.log(index)} */}
                                         {/* {console.log(item.idGenero)} */}
-                                        <td data-cell="Nome">
-                                            {/* Primeira célula da linha: mostra o nome (se for gênero) ou título (se for filme) */}
-                                            {/* titulo == filme */}
-                                            {props.tipoLista === "genero" ? item.nome : item.titulo}
-                                        </td>
                                         <td data-cell="Imagem" style={{ display: props.visibilidade }}>
-                                            {/* Segunda célula: mostra o nome do gênero caso o tipo da lista seja "filme".*/}
-                                            {/* adicionar essa linha depois de fazer o metd de lista filme: */}
-                                            <img className="img_cartaz" src={(`https://localhost:7159/imagens/${item.imagem}` == `https://localhost:7159/imagens/` || `https://localhost:7159/imagens/${item.imagem}` == `https://localhost:7159/imagens/null` || `https://localhost:7159/imagens/${item.imagem}` == `https://localhost:7159/imagens/undefined`) ? faltacartaz : `https://localhost:7159/imagens/${item.imagem}`} alt="Imagem" />
+                                            <img
+                                                className="img_cartaz"
+                                                src={
+                                                    (`https://localhost:7159/imagens/${item.imagem}` === `https://localhost:7159/imagens/` ||
+                                                        `https://localhost:7159/imagens/${item.imagem}` === `https://localhost:7159/imagens/null` ||
+                                                        `https://localhost:7159/imagens/${item.imagem}` === `https://localhost:7159/imagens/undefined`)
+                                                        ? faltacartaz
+                                                        : `https://localhost:7159/imagens/${item.imagem}`
+                                                }
+                                                alt="Imagem"
+                                            />
+                                        </td>
+
+                                        <td data-cell="Nome">
+                                            {props.tipoLista === "genero" ? item.nome : item.titulo}
                                         </td>
                                         <td data-cell="Gênero" style={{ display: props.visibilidade }}>
                                             {props.tipoLista === "filme" ? (item.idGeneroNavigation?.nome || '-') : '-'}
