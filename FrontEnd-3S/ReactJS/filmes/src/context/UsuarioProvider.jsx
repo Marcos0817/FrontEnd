@@ -1,20 +1,14 @@
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import { UsuarioContext } from "./UsuarioContext"
 
-export const UsuarioContext = createContext();
+export const UsuarioProvider = ({ children }) => {
+    const [usuario, setUsuario] = useState(() => {
+        const dadosStorage = localStorage.getItem("usuario");
 
-export function UsuarioProvider({ children }) {
-
-    const [usuario, setUsuario] = useState(null);
-
-    useEffect(() => {
-
-        const usuarioSalvo = localStorage.getItem("usuario");
-
-        if (usuarioSalvo) {
-            setUsuario(JSON.parse(usuarioSalvo));
-        }
-
-    }, []);
+        return dadosStorage
+            ? JSON.parse(dadosStorage)
+            : null;
+    });
 
     return (
         <UsuarioContext.Provider
@@ -26,4 +20,4 @@ export function UsuarioProvider({ children }) {
             {children}
         </UsuarioContext.Provider>
     );
-}
+};

@@ -1,0 +1,137 @@
+/* ===========================
+   TEMA ESCURO FILMOTECA
+=========================== */
+
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.dark-theme header {
+    background-color: #c93b55 !important;
+}
+
+/* ===========================
+   LOGIN
+=========================== */
+
+/* Fundo geral da tela */
+
+.dark-theme .main_login {
+    background-color: #121212 !important;
+}
+
+/* Mantém a imagem do lado esquerdo */
+
+.dark-theme .banner {
+    background-color: #121212 !important;
+}
+
+/* Mantém o lado direito vinho */
+
+.dark-theme .section_login {
+    background-color: #CC3F55 !important;
+}
+
+/* Inputs do login continuam brancos */
+
+.dark-theme .section_login input {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+}
+
+.dark-theme .section_login input::placeholder {
+    color: #666 !important;
+}
+
+.dark-theme .section_login label,
+.dark-theme .section_login h1 {
+    color: white !important;
+}
+
+/* ===========================
+   CADASTRO
+=========================== */
+
+.dark-theme .section_cadastro {
+    background-color: #c93b55 !important;
+}
+
+/* Inputs dos cadastros */
+
+.dark-theme .section_cadastro input,
+.dark-theme .section_cadastro select {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+}
+
+.dark-theme .section_cadastro input::placeholder {
+    color: #666 !important;
+}
+
+/* ===========================
+   LISTAS
+=========================== */
+
+.dark-theme .listagem {
+    background-color: #181818 !important;
+    color: white !important;
+}
+
+/* Tabelas */
+
+.dark-theme table {
+    color: white !important;
+}
+
+.dark-theme th {
+    color: white !important;
+}
+
+.dark-theme td {
+    color: white !important;
+}
+
+.dark-theme .item_lista {
+    border-bottom: 1px solid #333;
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+.dark-theme .listagem h1,
+.dark-theme .listagem h2,
+.dark-theme .listagem h3,
+.dark-theme .listagem h4,
+.dark-theme .listagem h5,
+.dark-theme .listagem h6 {
+    color: white !important;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.dark-theme footer {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.dark-theme button {
+    transition: 0.3s;
+}
+
+.dark-theme button:hover {
+    filter: brightness(1.1);
+}
